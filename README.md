@@ -10,8 +10,8 @@ https://www.scrum.org/open-assessments/scrum-open
 
 
 3. You will be redireckt to ,do not click anything
-https://www.classmarker.com/online-test/start/results/?quiz=XXXXXXX
+https://www.classmarker.com...
 
 
-4.press key "F12", click console (you have to type "allow pasting" for the first time)
+4. Press key "F12", click console (you have to type "allow pasting" for the first time)
 paste all the code into console
