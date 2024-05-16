@@ -103,7 +103,7 @@ async function main() {
     document.querySelector("[data-cy='continue-btn']").click()
     await delay(1000);
     document.querySelector("[data-cy='continue-btn']").click();
-    waitAndLog();
+    await waitAndLog();
     await delay(900);
     document.querySelector("[data-cy='finish-btn']").click();
     await delay(500);
