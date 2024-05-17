@@ -33,7 +33,7 @@ async function generateQuestionsFile() {
             var textElement = element.querySelector('.description.md .bbcode');
             if (textElement) {
                 var text = textElement.innerText.trim();
-                allText += '[Feedback]: ' + text + '';
+                allText += '(Feedback): ' + text + '';
             }
         }
 
