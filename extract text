@@ -1,0 +1,55 @@
+async function generateQuestionsFile() {
+    var elements = document.querySelectorAll('ion-card-content, .banner.warning.result-card__content__feedback.md');
+    var allText = '';
+    var separator = '................................................................................';
+    var processedQuestions = {};
+    var iterationCount = 0;
+
+    elements.forEach(function(element, index) {
+        var questionElement = element.querySelector('.question-text .bbcode');
+        if (questionElement) {
+            var questionText = questionElement.innerText.trim();
+            questionText = questionText.replace('\n\n', ' '); // 将换行符替换为空格
+            allText += separator + '\n' + '(Question): ' + questionText + '\n';
+        }
+
+        var optionElements = element.querySelectorAll('.question-content.overflow-x-auto .bbcode');
+        var optionIndex = 0;
+        optionElements.forEach(function(optionElement) {
+            var optionText = optionElement.innerText.trim();
+            optionText = optionText.replace(/A:|B:|C:|D:|E:|F:|G:|H:/g, '*:');
+            var optionLetter = String.fromCharCode(65 + optionIndex);
+
+            var isCorrect = optionElement.closest('.item').querySelector('.icon-correct');
+            if (isCorrect && (isCorrect.classList.contains('circular-tick') || isCorrect.classList.contains('circular-tick-holo'))) {
+                optionText += ' (Correct)';
+            }
+
+            allText += 'Option *' + ': ' + optionText + '\n';
+            optionIndex++;
+        });
+
+        if (iterationCount >= 2) {
+            var textElement = element.querySelector('.description.md .bbcode');
+            if (textElement) {
+                var text = textElement.innerText.trim();
+                allText += '[Feedback]: ' + text + '';
+            }
+        }
+
+        iterationCount++;
+
+        allText += '\n';
+    });
+
+    allText += separator;
+    var blob = new Blob([allText], { type: "text/plain;charset=utf-8" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "questions.txt";
+    a.click();
+    URL.revokeObjectURL(url);
+}
+
+generateQuestionsFile();
