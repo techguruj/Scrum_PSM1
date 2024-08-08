@@ -17,6 +17,6 @@ https://www.classmarker.com...
 paste all the code into console
 
 
-# Gute Nachricht: Ich habe die Qualifikationsprüfung mit 98,8% bestanden. Vielen Dank an alle, die mir geholfen haben.
+# Sehr Gute Nachricht: Ich habe die Qualifikationsprüfung mit 98,8% bestanden. Vielen Dank an alle, die mir geholfen haben.
 
  ![image](https://github.com/user-attachments/assets/00707a2e-0f6e-428b-bff6-eed6a12e1adc)
