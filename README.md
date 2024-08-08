@@ -25,32 +25,6 @@ paste all the code into console
 # Sehr Gute Nachricht: Ich habe die Qualifikationsprüfung mit (PSM I)98,8% bestanden. Vielen Dank an alle, die mir geholfen haben.
 
  ![image](https://github.com/user-attachments/assets/00707a2e-0f6e-428b-bff6-eed6a12e1adc)
+ ![image](https://github.com/user-attachments/assets/1bc3ade0-8449-4e4e-9fd6-765e05a42e8c)
 
-Results By Focus Area
-Focus Area (click to view learning resources)	Score
-Forecasting and Release Planning
-100.0%
-Coaching
-100.0%
-Events
-100.0%
-Scrum Team
-100.0%
-Done
-100.0%
-Self-Managing Teams
-100.0%
-Facilitation
-100.0%
-Product Value
-100.0%
-Scrum Values
-100.0%
-Artifacts
-100.0%
-Empiricism
-100.0%
-Stakeholders & Customers
-100.0%
-Product Backlog Management
-50.0%
+
